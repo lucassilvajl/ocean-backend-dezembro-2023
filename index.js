@@ -89,7 +89,7 @@ async function main() {
   // Delete - [DELETE] /item/:id
   app.delete("/item/:id", async function (req, res) {
     // Obtemos o ID do Parâmetro de rota
-    const id = req.params.id - 1
+    const id = req.params.id 
 
     // Removemos o item da lista
     await collection.deleteOne(
